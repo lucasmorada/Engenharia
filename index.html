@@ -41,12 +41,30 @@
       flex-direction: column;
       align-items: center;
       padding: 5rem 2rem;
-      background: url('https://images.unsplash.com/photo-1581091012184-7fef86c969b8?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background: url('banner.avif') no-repeat center center;
       background-size: cover;
       color: #ffffff;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       border-bottom: 6px solid #e0d4c3;
     }
+
+    .hero {
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-bg {
+  background: url('banner.avif') no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;       /* Cantos arredondados */
+  padding: 4rem 3rem;        /* Espaço interno para o texto não grudar */
+  max-width: 900px;          /* Limita a largura do banner */
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
 
     .hero h2 {
       font-size: 3rem;
@@ -126,10 +144,13 @@
     <p>Construindo ideias com alma mecânica e precisão de pensamento</p>
   </header>
 
-  <section class="hero">
+ <section class="hero">
+  <div class="hero-bg">
     <h2>Engenharia não é só técnica. É propósito.</h2>
-    <p>Na Justino Engenharia, cada engrenagem representa uma decisão calculada. Nosso nome carrega história, mas nossa visão aponta para o futuro. Projetamos, desenvolvemos e entregamos soluções técnicas com uma alma criativa e ousada.</p>
-  </section>
+    <p>Na Justino Engenharia, cada engrenagem representa uma decisão calculada...</p>
+  </div>
+</section>
+
 
   <section class="services">
     <h3>O que fazemos</h3>
